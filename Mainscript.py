@@ -6,11 +6,10 @@ import math
 import RPi.GPIO as GPIO
 import threading
 
-
-from ServoControl import servo_control			#Importerar programkoden för att styra servon, via PCA9685
-from Z_angle import IMUReader					#Importerar programkoden för att läsa av IMU-sensor (MPU 9250)
-from PID_control import PIDController			#Importerar progarm för att reglera utsignal (roder) med PID-regulator
-from Wind_angle import RotaryEncoder			#Importerar progamkoden för att läsa av vinkel på encoder
+from Pythonscript.ServoControl import servo_control			#Importerar programkoden för att styra servon, via PCA9685
+from Pythonscript.Z_angle import IMUReader					#Importerar programkoden för att läsa av IMU-sensor (MPU 9250)
+from Pythonscript.PID_control import PIDController			#Importerar progarm för att reglera utsignal (roder) med PID-regulator
+from Pythonscript.Wind_angle import RotaryEncoder			#Importerar progamkoden för att läsa av vinkel på encoder
 
 
 ############################################# Definiera GPIO-pins ##################################################
